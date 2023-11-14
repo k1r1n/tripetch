@@ -40,7 +40,8 @@ export const ContentStyle = styled.div`
   }
 
   .line,
-  .line-1 {
+  .line-1,
+  .line-2 {
     margin-top: 1px;
     width: 16.761px;
     height: 4px;
@@ -78,12 +79,15 @@ export const ContentStyle = styled.div`
       gap: 3px;
       margin-top: 6px;
     }
+
     .title {
       font-size: 36px;
     }
+
     .number {
       font-size: 18px;
     }
+
     .description {
       font-size: 18px;
       font-style: normal;
@@ -91,13 +95,19 @@ export const ContentStyle = styled.div`
       line-height: 28px;
       padding: 0 32px 0 0;
     }
-    .line-1 {
-      width: 19px;
+
+    .line {
+      width: 22px;
       height: 5px;
       flex-shrink: 0;
     }
-    .line {
-      width: 22px;
+    .line-1 {
+      width: 18.584px;
+      height: 5px;
+      flex-shrink: 0;
+    }
+    .line-2 {
+      width: 19px;
       height: 5px;
       flex-shrink: 0;
     }
@@ -125,15 +135,21 @@ export const ContentStyle = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
-      padding: 0 32px 0 0;
+      /* padding: 0 32px 0 0; */
+      max-width: 717px;
+    }
+    .line {
+      width: 22px;
+      height: 5px;
+      flex-shrink: 0;
     }
     .line-1 {
       width: 19px;
       height: 5px;
       flex-shrink: 0;
     }
-    .line {
-      width: 22px;
+    .line-2 {
+      width: 19px;
       height: 5px;
       flex-shrink: 0;
     }

@@ -4,12 +4,13 @@ import { colors } from "../../constants/color";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: -webkit-fill-available;
 `;
 
 export const Control = styled.div`
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   position: absolute;
   bottom: 17px;
   left: 50%;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../constants/color";
 
 export const Container = styled.div`
   width: 100%;
@@ -41,6 +40,7 @@ export const Container = styled.div`
 
   picture {
     display: flex;
+    z-index: 1;
     justify-content: center;
   }
 
@@ -164,82 +164,6 @@ export const Container = styled.div`
       .title {
         padding: 0 0 7.5px 0;
       }
-    }
-  }
-`;
-
-export const Athlets = styled.section`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 0;
-  margin: -7px 0 0 0;
-
-  h1 {
-    margin: 4px 0 2px 0;
-    padding: 0 0 10px 18px;
-    color: ${colors.gray_100};
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  @media (min-width: 768px) {
-    margin: 43px 0 0 0;
-
-    h1 {
-      font-size: 90px;
-      margin-left: 275px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    margin: 90px 0 0 0;
-    align-items: flex-start;
-
-    h1 {
-      font-size: 90px;
-      margin-left: 975px;
-    }
-  }
-`;
-
-export const Players = styled.section`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0;
-  margin: 18px 0 0 0;
-
-  h1 {
-    margin: 0 0 2px 0;
-    padding: 0 0 10px 18px;
-    color: ${colors.gray_100};
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  @media (min-width: 768px) {
-    margin: 44px 0 0 0;
-
-    h1 {
-      margin: 0px;
-      padding: 0 30px 0 30px;
-      font-size: 90px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    align-items: flex-start;
-    margin: 95px 0 0 0;
-
-    h1 {
-      margin: 0px;
-      padding: 0 30px 0 330px;
-      font-size: 90px;
     }
   }
 `;
